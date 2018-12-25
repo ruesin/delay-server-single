@@ -3,6 +3,7 @@
     "description": "Single Delay-Queue-Server",
     "type": "project",
     "keywords": ["delay-queue"],
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Ruesin Liu",
