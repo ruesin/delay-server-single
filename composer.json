@@ -2,7 +2,6 @@
     "name" : "ruesin/delay-server-single",
     "description": "Single Delay-Queue-Server",
     "type": "project",
-    "version":"1.0.0",
     "keywords": ["delay-queue"],
     "authors": [
         {
