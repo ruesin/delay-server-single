@@ -1,22 +1,20 @@
 <?php
+define('ROOT_DIR', __DIR__.'/');
 
-include_once __DIR__ . '/common/start.php';
+require_once ROOT_DIR.'/vendor/autoload.php';
 
-$config = include ROOT_DIR . '/config/server.php';
-
+//process http tcp
 if (!isset($argv[1])) {
     return false;
 }
 
-//process http tcp
-$type = $argv[1];
-
-if (!isset($config[$type])) {
+$config = \App\Utils\Config::get('server.'.$argv[1]);
+if ( !$config ) {
     return false;
 }
 
 //start stop reload restart
 $operate = isset($argv[2]) ? $argv[2] : 'start';
 
-$class = new \Swover\Server($config[$type]);
+$class = new \Swover\Server($config);
 $class->$operate();
