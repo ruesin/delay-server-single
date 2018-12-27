@@ -11,7 +11,7 @@ if (!isset($request['action']) || !$request['action']) {
     return;
 }
 
-if (\App\Sign::verify($request) !== true) {
+if (\App\Utils\Sign::verify($request) !== true) {
     echo 'no no no~';
     return;
 }
