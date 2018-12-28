@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "ruesin/swover": "^1.0",
+        "ruesin/swover": "dev-worker",
         "predis/predis": "1.1.1",
         "php": ">=7.0",
         "ext-json" : "*"

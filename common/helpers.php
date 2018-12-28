@@ -1,4 +1,4 @@
 <?php
 (function () {
-    \App\Utils\Config::init(ROOT_DIR.'/config/');
+    \Swover\Utils\Config::loadPath(ROOT_DIR.'/config/');
 })();

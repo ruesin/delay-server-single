@@ -74,7 +74,7 @@ class Redis
         if(!empty($config)) {
             return $config;
         }
-        return Config::get('redis');
+        return \Swover\Utils\Config::get('redis');
     }
 
     private static function configToName($config)
