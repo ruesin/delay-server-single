@@ -2,8 +2,5 @@
 vendor/
 composer.lock
 runtime/*
-config/constants.php
-config/redis.php
-config/secrets.php
-config/server.php
+config/*.php
 test.php
