@@ -1,4 +1,4 @@
-# delay-queue
+# delay-server-single
 基于 Redis 实现的延时队列，只提供简单的延时能力，不负责业务相关队列，需要在创建队列时提供业务队列的连接信息，消息到期时自动将消息移动到业务队列。
 
 ## 依赖
@@ -15,7 +15,7 @@ $ composer create-project --prefer-dist ruesin/delay-server-single
 
 ## 配置
 拷贝`./config/samples/*.php`到`./config/`，并按需修改：
-- `constants.php` 常量定义
+- `queue.php` 队列定义
 - `redis.php` Redis服务器配置
 - `secrets.php` 验证签名的密钥对
 - `server.php` 服务启动的配置文件，参考[swover](https://github.com/ruesin/swover)

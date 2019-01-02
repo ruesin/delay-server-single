@@ -1,5 +1,8 @@
 <?php
-include_once dirname(__DIR__) . '/common/start.php';
+define('ROOT_DIR', dirname(__DIR__).'/');
+
+//引入自动加载
+require_once ROOT_DIR.'/vendor/autoload.php';
 
 $request = array_merge($_GET, $_POST);
 
@@ -8,7 +11,7 @@ if (!isset($request['action']) || !$request['action']) {
     return;
 }
 
-if (\App\Sign::verify($request) !== true) {
+if (\App\Utils\Sign::verify($request) !== true) {
     echo 'no no no~';
     return;
 }

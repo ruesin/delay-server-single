@@ -27,7 +27,6 @@ class Handle
      * 创建队列
      *
      * @return string
-     * @throws \Exception
      */
     public function createQueue()
     {
@@ -56,7 +55,6 @@ class Handle
     /**
      * 删除队列
      * @return bool
-     * @throws \Exception
      */
     public function dropQueue()
     {
@@ -71,7 +69,6 @@ class Handle
     /**
      * 发送消息
      * @return bool|string
-     * @throws \Exception
      */
     public function addMessage()
     {

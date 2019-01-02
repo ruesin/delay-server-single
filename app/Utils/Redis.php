@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Utils;
 
 /**
@@ -59,7 +60,7 @@ class Redis
     public static function close($config = [])
     {
         $config = self::getConfig($config);
-        $name   = self::configToName($config);
+        $name = self::configToName($config);
 
         if (isset(self::$_instance[$name])) {
             self::$_instance[$name]->quit();
@@ -71,10 +72,10 @@ class Redis
 
     private static function getConfig($config)
     {
-        if(!empty($config)) {
+        if (!empty($config)) {
             return $config;
         }
-        return Config::get('redis');
+        return \Swover\Utils\Config::get('redis');
     }
 
     private static function configToName($config)

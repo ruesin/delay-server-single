@@ -40,7 +40,7 @@ class Sign
 
     private static function secret($secretId)
     {
-        $secrets = Config::get('secrets');
+        $secrets = \Swover\Utils\Config::get('secrets');
         return isset($secrets[$secretId]) ? $secrets[$secretId] : false;
     }
 }
