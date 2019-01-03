@@ -27,7 +27,7 @@
     "prefer-stable": true,
     "scripts": {
         "post-root-package-install": [
-            "@php -r \"copy('./config/samples/constants.php', './config/constants.php');\"",
+            "@php -r \"copy('./config/samples/queue.php', './config/queue.php');\"",
             "@php -r \"copy('./config/samples/redis.php', './config/redis.php');\"",
             "@php -r \"copy('./config/samples/secrets.php', './config/secrets.php');\"",
             "@php -r \"copy('./config/samples/server.php', './config/server.php');\""
