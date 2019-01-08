@@ -1,6 +1,8 @@
 # delay-server-single
 基于 Redis 实现的延时队列，只提供简单的延时能力，不负责业务相关队列，需要在创建队列时提供业务队列的连接信息，消息到期时自动将消息移动到业务队列。
 
+建议使用[delay-server](https://github.com/ruesin/delay-server)，已经做了对此服务的兼容。
+
 ## 依赖
 - Redis > 3.2
 - PHP > 7.0

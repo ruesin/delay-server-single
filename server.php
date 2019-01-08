@@ -1,7 +1,7 @@
 <?php
 define('ROOT_DIR', __DIR__.'/');
 
-require_once ROOT_DIR.'/vendor/autoload.php';
+require_once ROOT_DIR.'vendor/autoload.php';
 
 //process http tcp
 if (!isset($argv[1])) {
